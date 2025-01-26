@@ -29,7 +29,7 @@ function NavBar() {
               </a>
             </span>
           </div>
-          <div className="hidden md:flex space-x-7">
+          <div className="hidden md:flex space-x-7 items-center">
             <button
               onClick={() => handleScroll("home")}
               className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
@@ -43,7 +43,7 @@ function NavBar() {
               ABOUT
             </button>
             <button
-              onClick={() => handleScroll("home")}
+              onClick={() => handleScroll("projects")}
               className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
             >
               PROJECTS
@@ -60,6 +60,14 @@ function NavBar() {
             >
               CONTACT
             </button>
+            <a
+              href="https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8"
+              download
+              className="flex items-center text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
+            >
+              <IoIosDownload className="mr-1" />
+              RESUME
+            </a>
           </div>
           <button
             className="md:hidden text-black text-2xl"
@@ -107,6 +115,14 @@ function NavBar() {
           >
             CONTACT
           </button>
+          <a
+            href="https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8"
+            download
+            className="text-black hover:underline w-full text-center flex items-center justify-center"
+          >
+            <IoIosDownload className="mr-1" />
+            RESUME
+          </a>
         </div>
       </div>
     </div>
