@@ -43,7 +43,7 @@ function NavBar() {
               ABOUT
             </button>
             <button
-              onClick={() => handleScroll("projects")}
+              onClick={() => handleScroll("home")}
               className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
             >
               PROJECTS

@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import About from "./components/about";
 import Skills from "./components/skills";
 import Contact from "./components/Contact";
-import GitHubDashboard from "./components/GitHubDashboard";
+
 
 function App() {
   useEffect(() => {
