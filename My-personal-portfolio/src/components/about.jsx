@@ -48,12 +48,7 @@ const About = () => {
             commitment to learning fuel my ambition to make meaningful
             contributions to the tech world.
           </p>
-          <a
-            href="#contact"
-            className="inline-block px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition"
-          >
-            Get in Touch
-          </a>
+    
         </div>
       </div>
     </section>
