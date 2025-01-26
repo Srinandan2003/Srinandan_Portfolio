@@ -26,7 +26,7 @@ function App() {
         <About data-aos="fade-left" />
       </div>
       <div id="projects">
-        <GitHubDashboard data-aos="fade-up" />
+       
       </div>
       <div id="skills">
         <Skills data-aos="fade-right" />
