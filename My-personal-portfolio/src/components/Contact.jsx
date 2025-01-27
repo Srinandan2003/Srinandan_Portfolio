@@ -61,8 +61,8 @@ const Contact = () => {
                 <Globe className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Website</h3>
-              <a href="https://aleemalam.netlify.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-medium">
-                aleemalam.netlify.app
+              <a href="https://srinandan-portfolio-iq33.vercel.app/ " target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-medium">
+              https://srinandan-portfolio-iq33.vercel.app/
               </a>
             </div>
           </div>
