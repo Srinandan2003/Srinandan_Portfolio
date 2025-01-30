@@ -23,50 +23,55 @@ function NavBar() {
             <span className="font-bold text-2xl">
               <a
                 href="#home"
-                className="bg-gradient-to-r from-purple-700 to-indigo-800 bg-clip-text text-transparent hover:from-emerald-900 hover:to-teal-900 transition-all duration-400"
+                style={{ color: 'rgba(4, 0, 77, 1)' }}
               >
-                {"< Srinandan />"}
+                {"< PORTFOLIO />"}
               </a>
             </span>
           </div>
           <div className="hidden md:flex space-x-7 items-center">
             <button
               onClick={() => handleScroll("home")}
-              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
+              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200  hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
             >
               HOME
             </button>
             <button
               onClick={() => handleScroll("about")}
-              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
+              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200  hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
             >
               ABOUT
             </button>
             <button
               onClick={() => handleScroll("projects")}
-              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
+              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200  hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
             >
               PROJECTS
             </button>
             <button
               onClick={() => handleScroll("skills")}
-              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
+              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200  hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
             >
               SKILLS
             </button>
             <button
               onClick={() => handleScroll("contact")}
-              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
+              className="text-black font-bold px-3 py-1 rounded-md transition-colors duration-200  hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
             >
               CONTACT
             </button>
             <a
-              href="https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8"
-              download
-              className="flex items-center text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-black hover:text-white"
-            >
-              <IoIosDownload className="mr-1" />
-              RESUME
+               href="https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8"
+               download="Srinandan_Resume.pdf"  // Added name for downloaded file
+               onClick={(e) => {
+                 e.preventDefault();
+                 window.open("https://drive.google.com/file/d/13LutxzlpJ9tpU2z5vOTq10dts46el2H8/view", "_blank");
+                 window.location.href = "https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8";
+               }}
+               className="flex items-center text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
+             >
+               <IoIosDownload className="mr-1" />
+               RESUME
             </a>
           </div>
           <button
@@ -116,13 +121,18 @@ function NavBar() {
             CONTACT
           </button>
           <a
-            href="https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8"
-            download
-            className="text-black hover:underline w-full text-center flex items-center justify-center"
-          >
-            <IoIosDownload className="mr-1" />
-            RESUME
-          </a>
+               href="https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8"
+               download="Srinandan_Resume.pdf"  // Added name for downloaded file
+               onClick={(e) => {
+                 e.preventDefault();
+                 window.open("https://drive.google.com/file/d/13LutxzlpJ9tpU2z5vOTq10dts46el2H8/view", "_blank");
+                 window.location.href = "https://drive.google.com/uc?export=download&id=13LutxzlpJ9tpU2z5vOTq10dts46el2H8";
+               }}
+               className="flex items-center text-black font-bold px-3 py-1 rounded-md transition-colors duration-200 hover:bg-gradient-to-r hover:from-[#21178a] hover:to-[#5166ff] hover:text-white"
+             >
+               <IoIosDownload className="mr-1" />
+               RESUME
+            </a>
         </div>
       </div>
     </div>

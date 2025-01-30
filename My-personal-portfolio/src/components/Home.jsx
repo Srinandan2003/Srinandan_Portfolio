@@ -1,4 +1,4 @@
-import personal_image from '../assets/personel_image.jpg';
+import myPhoto from '../assets/myPhoto.png';
 import { Typewriter } from 'react-simple-typewriter';
 
 function Home() {
@@ -15,14 +15,16 @@ function Home() {
           </h1>
           <p 
             className="text-2xl md:text-3xl lg:text-4xl mt-4 font-semibold tracking-tighter"
+            style={{ color: 'rgba(4, 0, 77, 1)' }}
           >
             <Typewriter
+            
               words={[
-                "Aspiring Web Developer",
+                "Frontend Web Developer",
                 "Learning UI/UX Design",
                 "Curious Tech Enthusiast",
-                "Always Growing",
-                "Problem Solver in Progress",
+               
+                
               ]}
 
               loop={true}
@@ -41,9 +43,9 @@ function Home() {
           className="mt-8 md:mt-0"
         >
           <img 
-            src={personal_image} 
+            src={ myPhoto} 
             alt="Profile picture" 
-            className="rounded-lg shadow-xl w-[250px] md:w-[300px] lg:w-[400px] h-auto object-cover"
+            className="rounded-lg  w-[250px] md:w-[300px] lg:w-[500px] h-auto object-cover"
           />
         </div>
       </div>
