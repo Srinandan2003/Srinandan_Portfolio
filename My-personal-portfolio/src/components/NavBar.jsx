@@ -16,8 +16,8 @@ function NavBar() {
   };
 
   return (
-    <div className="relative">
-      <nav className="w-full px-2 py-2 fixed z-10 bg-white shadow-md">
+    <div className="relative border ">
+      <nav className="w-full px-2 py-2 fixed z-10  bg-white shadow-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <span className="font-bold text-2xl">

@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import About from "./components/about";
 import Skills from "./components/skills";
 import Contact from "./components/Contact";
-
+import ProjectSection from "./components/projects"
 
 function App() {
   useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
         <About data-aos="fade-left" />
       </div>
       <div id="projects">
-       
+       <ProjectSection/>
       </div>
       <div id="skills">
         <Skills data-aos="fade-right" />

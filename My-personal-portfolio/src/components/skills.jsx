@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+// Image imports remain the same
 import htmlImage from "../assets/skillsImages/html-5.png";
 import reactImage from "../assets/skillsImages/react.png";
 import cssImage from "../assets/skillsImages/css-3.png";
@@ -22,16 +24,16 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { image: htmlImage, bgColor: "bg-orange-50", category: "core", name: "HTML" },
-    { image: cssImage, bgColor: "bg-blue-50", category: "core", name: "CSS" },
-    { image: jsImage, bgColor: "bg-yellow-50", category: "core", name: "JavaScript" },
-    { image: reactImage, bgColor: "bg-cyan-50", category: "framework", name: "React" },
-    { image: tailwindCss, bgColor: "bg-teal-50", category: "framework", name: "Tailwind CSS" },
-    { image: bootstrapImage, bgColor: "bg-purple-50", category: "framework", name: "Bootstrap" },
-    { image: netlifyImage, bgColor: "bg-green-50", category: "technology", name: "Netlify" },
-    { image: vercelImage, bgColor: "bg-gray-50", category: "technology", name: "Vercel" },
-    { image: githubImage, bgColor: "bg-black-50", category: "technology", name: "GitHub" },
-    { image: chakraImage, bgColor: "bg-indigo-50", category: "framework", name: "Chakra UI" },
+    { image: htmlImage, bgColor: "bg-orange-50", name: "HTML" },
+    { image: cssImage, bgColor: "bg-blue-50", name: "CSS" },
+    { image: jsImage, bgColor: "bg-yellow-50", name: "JavaScript" },
+    { image: reactImage, bgColor: "bg-cyan-50", name: "React" },
+    { image: tailwindCss, bgColor: "bg-teal-50", name: "Tailwind CSS" },
+    { image: bootstrapImage, bgColor: "bg-purple-50", name: "Bootstrap" },
+    { image: netlifyImage, bgColor: "bg-green-50", name: "Netlify" },
+    { image: vercelImage, bgColor: "bg-gray-50", name: "Vercel" },
+    { image: githubImage, bgColor: "bg-black-50", name: "GitHub" },
+    { image: chakraImage, bgColor: "bg-indigo-50", name: "Chakra UI" },
   ];
 
   return (
@@ -79,14 +81,6 @@ const Skills = () => {
                 <h3 className="text-lg font-semibold text-gray-900">
                   {skill.name}
                 </h3>
-                <span className={`mt-2 inline-block px-3 py-1 rounded-full text-sm font-medium
-                  ${skill.category === 'core' 
-                    ? 'bg-orange-200 text-orange-800' 
-                    : 'bg-cyan-200 text-cyan-800'
-                  }`}
-                >
-                  {skill.category === 'core' ? 'Core Technology' : 'Framework'}
-                </span>
               </div>
             </div>
           </div>
