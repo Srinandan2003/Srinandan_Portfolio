@@ -62,7 +62,7 @@ const ProjectSection = () => {
   const projects = [
     {
       title: "Time Buddy",
-      description: "It is a versatile time management web application designed to enhance productivity and organization. It offers features such as a Pomodoro timer, task prioritization, link organization, goal tracking, calendar functionalities, and AI-based voice command support.",
+      description: "It is a versatile time management web application designed to enhance productivity and organization. It offers features such as a Pomodoro timer, task prioritization, link organization, goal tracking, calendar functionalities, and voice command support.",
       image: taskManagementImage,
       techStack: ["HTML", "CSS", "JavaScript"],
       liveLink: "https://fanciful-elf-ed4c09.netlify.app",
